@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements Callback<SearchMo
     }
 
     @Override
-    public void addItem() {
+    public void onFinishTask() {
         addItemToAdapter();
         progressBar.setVisibility(View.GONE);
     }

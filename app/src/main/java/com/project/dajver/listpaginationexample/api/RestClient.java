@@ -1,7 +1,5 @@
 package com.project.dajver.listpaginationexample.api;
 
-import com.google.gson.Gson;
-
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
@@ -22,11 +20,7 @@ public class RestClient {
         return instance.service;
     }
 
-    public static Gson gson() {
-        return new Gson();
-    }
-
-    private final API service;
+    private API service;
 
     public RestClient() {
         Retrofit retrofit = new Retrofit.Builder()

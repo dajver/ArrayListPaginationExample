@@ -35,11 +35,11 @@ public class AddItemsTask extends AsyncTask<Void, Void, Void> {
     @Override
     protected void onPostExecute(Void result) {
         super.onPostExecute(result);
-        addItemToAdapter.addItem();
+        addItemToAdapter.onFinishTask();
     }
 
     public interface OnAddItemListener {
         void onStartTask();
-        void addItem();
+        void onFinishTask();
     }
 }
